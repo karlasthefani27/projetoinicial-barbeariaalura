@@ -1,0 +1,195 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin-left: 40px ;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+nav li {
+	
+	display: inline;
+	margin-left: 15px;
+}
+
+/* letras maisculas */
+nav a { 
+	text-transform: uppercase;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 18px;
+	/*texto sublinhado */
+	text-decoration: none;
+	text-shadow: black 2px 3px 2px;
+
+}
+nav a:hover {
+	font-size: 24px;
+}
+
+/* hover - cursor por cima dos links */
+nav a:hover {
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+header {
+	background: url('m000526539.jpg');
+	background-size: cover;
+	position: relative;
+	height: calc(100vh - 50px);
+	width: 100vw;
+}
+
+
+/*css da pagina inicial */
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	padding: 30px 0;
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left; /*limpar float */
+
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+}
+.principal p {
+
+	margin: 0 0 1em;
+	margin-top: 30px;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+.principal em {
+	font-style: italic;
+	margin-top: 5px;
+}
+
+
+.utensilios {
+	width: 50%;
+	float: left;
+	margin: 0 20px 20px 0; /*cima, direita, baixo, esquerda */
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+
+}
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+
+}
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+/*
+.itens:first-child { /*primeiro item da lista - (pseudo classes) 
+	font-weight: bold;
+} */
+
+.itens:before {
+	content: "\1F3C6";
+}
+
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+
+}
+
+footer {
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 50px 0 0;
+}
+.copyright {
+	color: white;
+	font-size: 13px;
+	margin: 15px;
+}
+.iconLinkedin {
+        width: 30px;
+        align-items: center;
+}
+.iconGithub {
+        width: 30px;
+        align-items: center;
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+	}
+	header {
+		height: 100%;
+	}
+}
+
+
+
+/*03399853012970000140690312001010791060000010100*/
